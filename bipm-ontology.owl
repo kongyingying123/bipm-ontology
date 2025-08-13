@@ -1,0 +1,1395 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/bipm/ontology#"
+     xml:base="https://w3id.org/bipm/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ontology="https://w3id.org/bipm/ontology#">
+    <owl:Ontology rdf:about="https://w3id.org/bipm/ontology">
+        <owl:versionIRI rdf:resource="https://w3id.org/bipm/ontology/v1.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#Oid -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#Oid"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasActuator -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasActuator">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasAnimation -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasAnimation">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmAnimation"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasController -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasController">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasSensor -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasSensor">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasSpace -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasSpace">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmSpace"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmZone"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasValue -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/bipm/ontology#hasValue">
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmValue"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#bandTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#bandTo">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuator"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChillerController"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChillerPhysicalModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#establishTo -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#establishTo">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmChillerAlgorithmicReasoningComputingFunctionality"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmChillerPhysicalModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasActuator -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasActuator">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasAnimation -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasAnimation">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasAttribute -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasAttribute">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasCommand -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasCommand">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmController"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmActuator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasController -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasController"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasFunctionality -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasFunctionality">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmFunctionality"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasOid -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasOid">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmOid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasPhysics -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasPhysics">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmPhysicalModel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasRecord -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasRecord">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSensor"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmController"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasSensor -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasSensor"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasSpace -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasSpace">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasStatus -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasStatus">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasTime -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasTime">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmStatus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasUnit">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmSize"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmValue"/>
+        <rdfs:range rdf:resource="https://w3id.org/bipm/ontology#BipmUnit"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#hasValue -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#hasValue">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmCartesian"/>
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#isCommandof -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/bipm/ontology#isCommandof"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#alarmName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#alarmName">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmAlarm"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#attributeValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#attributeValue">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#manufacturerName -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#manufacturerName"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#modelValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#modelValue"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#positionalValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#positionalValue">
+        <rdfs:domain rdf:resource="https://w3id.org/bipm/ontology#BipmZone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#ratedValue_Power -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#ratedValue_Power"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#ratedValue_RefrigeratingCapacity -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#ratedValue_RefrigeratingCapacity"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#realValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/bipm/ontology#realValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmActuator -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmAgingFatigueLaw -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmAgingFatigueLaw">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmTimePhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmAlarm -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmAlarm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmFunctionality"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmAnimation -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmAnimation"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmArchitecture -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmArchitecture">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmAttribute -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmAttribute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#attributeValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmBlackBoxModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmBlackBoxModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmBuildingEnvironment -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmCartesian -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmCartesian">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmZone"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmCategory -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmCategory">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChiller -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChiller">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerActuator -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerActuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmActuator"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuatorValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerCondenserWaterProcessorFaultAlarm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterProcessorFaultAlarm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerRunningAlarm"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerActuatorValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerActuatorValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerAlgorithmicReasoningComputingFunctionality -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerAlgorithmicReasoningComputingFunctionality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmFunctionality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCOP -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCOP">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterInletFlowValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterInletFlowValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterInletTemperatureValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterInletTemperatureValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperatureSetValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperatureSetValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperatureValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperatureValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCondenserWaterProcessorFaultAlarm -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCondenserWaterProcessorFaultAlarm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAlarm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#alarmName"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condenser</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCondenserWaterWalveSwitchSetValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCondenserWaterWalveSwitchSetValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterWalveSwitchSetValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffSetValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCondenserWaterWalveSwitchValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCondenserWaterWalveSwitchValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuatorValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerConditionMonitoringSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerConditionMonitoringSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerController -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerController">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmController"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerAlgorithmicReasoningComputingFunctionality"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmManualSet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerControllerValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerControllerValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCoolingWaterInletFlowValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCoolingWaterInletFlowValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerCoolingWaterInletTemperatureValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerCoolingWaterInletTemperatureValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerElectricPowerSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerElectricPowerSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerElectricPowerValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerElectricPowerValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterProcessorFaultAlarm -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterProcessorFaultAlarm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAlarm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#alarmName"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evaporator</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterWalveSwitchSetValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterWalveSwitchSetValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterWalveSwitchValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterWalveSwitchValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuatorValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerFlowSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerFlowSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://w3id.org/bipm/ontology#BipmChillerTemperatureSensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerOnOffSetValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerOnOffSetValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#realValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerOnOffValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerOnOffValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuatorValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerPhysicalModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerPhysicalModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBlackBoxModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerRatedCoolingCapacityValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerRatedCoolingCapacityValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerRefrigeratingCapacity -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerRefrigeratingCapacity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerRunningAlarm -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerRunningAlarm">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAlarm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#alarmName"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Running</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensorValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerSensorValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerSensorValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerTemperatureSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerTemperatureSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmChillerSensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerChilledWaterInletTemperatureValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasValue"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerCoolingWaterInletTemperatureValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmChillerValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmDeviceValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmConstructionProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmConstructionProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmContinuousState -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmContinuousState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmController -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmController">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDevice -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDevice">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDeviceValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDeviceValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDimensionalValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDimensionalValue">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmValue"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDiscreteState -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDiscreteState">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmStatus"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDisplayFunctionality -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDisplayFunctionality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAnimation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmDoor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmDoor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmFireAlarmSyatem -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmFireAlarmSyatem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmFunctionalPhysicalModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmFunctionalPhysicalModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmFunctionality -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmFunctionality"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmManualSet -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmManualSet">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmFunctionality"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#hasFunctionality"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/bipm/ontology#BipmChillerControllerValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmManufacturingProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmManufacturingProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmMaterials -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmMaterials">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmMechanicalModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmMechanicalModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmFunctionalPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmOid -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmOid">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmOperationAndMaintenanceProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmOperationAndMaintenanceProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmPhysicalModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmPhysicalModel"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmProcess -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmProcess">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmRotateFunctionality -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmRotateFunctionality">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAnimation"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSensor -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmSensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSize -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmSize">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSmokeControlSystem -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmSmokeControlSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmSystem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSpace -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmSpace">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmZone"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmStair -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmStair">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmStatus -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmStatus"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmStorey -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmStorey">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmZone"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSystem -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmSystem">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmTag -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmTag">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmAttribute"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmTimePhysicalModel -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmTimePhysicalModel">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmPhysicalModel"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmUnit -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmUnit"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmValue -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmValue"/>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmWall -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmWall">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmWindow -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmWindow">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmArchitecture"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmZone -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#BipmZone">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmBuildingEnvironment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/bipm/ontology#positionalValue"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#UnitOfDistance -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#UnitOfDistance">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#UnitOfLength -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#UnitOfLength">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#UnitOfPower -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#UnitOfPower">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#UnitOfTime -->
+
+    <owl:Class rdf:about="https://w3id.org/bipm/ontology#UnitOfTime">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/bipm/ontology#BipmUnit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmActuator_892 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmActuator_892">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerActuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature_146 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature_146">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChiller_1945 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmChiller_1945">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+        <ontology:manufacturerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green</ontology:manufacturerName>
+        <ontology:modelValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CVE510PIEKIE</ontology:modelValue>
+        <ontology:ratedValue_Power rdf:datatype="http://www.w3.org/2001/XMLSchema#double">398.0</ontology:ratedValue_Power>
+        <ontology:ratedValue_RefrigeratingCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2285.0</ontology:ratedValue_RefrigeratingCapacity>
+        <ontology:Oid>BCHR_1945</ontology:Oid>
+        <ontology:hasActuator rdf:resource="https://w3id.org/bipm/ontology#BipmActuator_892"/>
+        <ontology:hasController rdf:resource="https://w3id.org/bipm/ontology#BipmController_1977"/>
+        <ontology:hasSensor rdf:resource="https://w3id.org/bipm/ontology#BipmSensor_1988"/>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSpace_1897"/>
+        <ontology:hasValue rdf:resource="https://w3id.org/bipm/ontology#BipmChillerChilledWaterOutleTemperature_146"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChiller_336 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmChiller_336">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmChiller_657 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmChiller_657">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChiller"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmController_1977 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmController_1977">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerController"/>
+        <ontology:Oid>BCUC_1977</ontology:Oid>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSpace_1977"/>
+        <ontology:hasValue rdf:resource="https://w3id.org/bipm/ontology#BipmChillerCOP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmController_1988 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmController_1988">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerController"/>
+        <ontology:Oid>BCUC_1988</ontology:Oid>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSpace_1988"/>
+        <ontology:hasValue rdf:resource="https://w3id.org/bipm/ontology#BipmChillerCOP"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmRefrigeratingCapacity_1488 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmRefrigeratingCapacity_1488">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerRefrigeratingCapacity"/>
+        <ontology:Oid>BCRC_1488</ontology:Oid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSensor_1977 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmSensor_1977">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerElectricPowerSensor"/>
+        <ontology:Oid>BCUS_1977</ontology:Oid>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSpace_1977"/>
+        <ontology:hasValue rdf:resource="https://w3id.org/bipm/ontology#BipmChillerElectricPowerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSensor_1988 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmSensor_1988">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerElectricPowerSensor"/>
+        <ontology:Oid>BCUS_1988</ontology:Oid>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSpace_1988"/>
+        <ontology:hasValue rdf:resource="https://w3id.org/bipm/ontology#BipmChillerElectricPowerValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSpace_1897 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmSpace_1897">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSpace_1977 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmSpace_1977">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmSpace_1988 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmSpace_1988">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmSpace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#BipmrRefrigeratingCapacity_1757 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#BipmrRefrigeratingCapacity_1757">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerRefrigeratingCapacity"/>
+        <ontology:Oid>BCRC_1757</ontology:Oid>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#Off -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#Off">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffSetValue"/>
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/bipm/ontology#On -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/bipm/ontology#On">
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffSetValue"/>
+        <rdf:type rdf:resource="https://w3id.org/bipm/ontology#BipmChillerOnOffStateValue"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <ontology:hasSpace rdf:resource="https://w3id.org/bipm/ontology#BipmSensor_1988"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmActuator"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmChiller"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmController"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmSensor"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmCategory"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmMaterials"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmSize"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmTag"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmChillerCondenserWaterProcessorFaultAlarm"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmChillerEvaporatorWaterProcessorFaultAlarm"/>
+            <rdf:Description rdf:about="https://w3id.org/bipm/ontology#BipmChillerRunningAlarm"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
